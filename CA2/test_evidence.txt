@@ -1,0 +1,219 @@
+CAP455 CA2 – EXECUTED TEST EVIDENCE
+Compilation command: g++ -std=c++17 -Wall -Wextra -pedantic main.cpp -o ca2_test
+Compiler return code: 0
+Compiler diagnostics: None
+TruckRecord size in this build: 132 bytes
+
+TC01 Add a new record
+Process return code: 0
+Data file size after test: 132 bytes
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: 
+Enter Truck ID: Enter Truck Name: Enter Location: Enter Menu Item: Enter Price: Enter Status (A/C): Record saved successfully.
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: Program closed.
+
+--------------------------------------------------------------------
+TC02 Reject duplicate ID
+Process return code: 0
+Data file size after test: 132 bytes
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: 
+Enter Truck ID: Duplicate ID. Record not added.
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: Program closed.
+
+--------------------------------------------------------------------
+TC03 Search existing ID
+Process return code: 0
+Data file size after test: 132 bytes
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: 
+Enter Truck ID to search: 
+ID: 101
+Name: Food Corner
+Location: Main Market
+Menu: Burger
+Price: 80
+Status: A
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: Program closed.
+
+--------------------------------------------------------------------
+TC04 Update existing record
+Process return code: 0
+Data file size after test: 132 bytes
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: 
+Enter Truck ID to update: Enter New Truck Name: Enter New Location: Enter New Menu Item: Enter New Price: Enter Status (A/C): Record updated successfully.
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: Program closed.
+
+--------------------------------------------------------------------
+TC05 Restart and display persisted record
+Process return code: 0
+Data file size after test: 132 bytes
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: 
+ID: 101
+Name: Food Corner Updated
+Location: Main Market
+Menu: Cheese Burger
+Price: 100
+Status: A
+----------------------
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: Program closed.
+
+--------------------------------------------------------------------
+TC06 Search missing ID
+Process return code: 0
+Data file size after test: 132 bytes
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: 
+Enter Truck ID to search: Record not found.
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: Program closed.
+
+--------------------------------------------------------------------
+TC07 Reject invalid price
+Process return code: 0
+Data file size after test: 0 bytes
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: 
+Enter Truck ID: Enter Truck Name: Enter Location: Enter Menu Item: Enter Price: Enter Status (A/C): Invalid input. Record not saved.
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: Program closed.
+
+--------------------------------------------------------------------
+ACTUAL TWO-PROCESS RESTART TEST
+First process: add ID 501 and exit.
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: 
+Enter Truck ID: Enter Truck Name: Enter Location: Enter Menu Item: Enter Price: Enter Status (A/C): Record saved successfully.
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: Program closed.
+
+Second process: reopen program and display all records.
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: 
+ID: 501
+Name: Restart Test Truck
+Location: Station Road
+Menu: Wrap
+Price: 75
+Status: A
+----------------------
+
+===== FOOD TRUCK PLANNER =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Exit
+Enter choice: Program closed.
+
+PASS check: 'Restart Test Truck' appears in second process output: True
+--------------------------------------------------------------------
