@@ -1,0 +1,422 @@
+CAP455 CA3 TEST EVIDENCE
+Compiler: g++ -std=c++17 -Wall -Wextra -pedantic main.cpp -o ca3_test
+
+display_existing: PASS
+Expected fragment: ID: 101
+Console output:
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: ID: 101, Name: Food Corner, Location: Main Market, Menu: Burger, Price: 80, Status: A
+--------------------
+ID: 102, Name: Tasty Wheels, Location: College Road, Menu: Pizza, Price: 120, Status: A
+--------------------
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Program closed.
+
+
+add_valid: PASS
+Expected fragment: Record saved successfully.
+Console output:
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Enter Truck ID: Enter Truck Name: Enter Location: Enter Menu Item: Enter Price: Enter Status (A/C): Record saved successfully.
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: ID: 501, Name: Campus Bites, Location: Main Gate, Menu: Sandwich, Price: 75, Status: A
+--------------------
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Program closed.
+
+
+duplicate_id: PASS
+Expected fragment: Duplicate ID.
+Console output:
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Enter Truck ID: Enter Truck Name: Enter Location: Enter Menu Item: Enter Price: Enter Status (A/C): Duplicate ID. Record not added.
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Program closed.
+
+
+search_missing: PASS
+Expected fragment: Record not found.
+Console output:
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Enter Truck ID to search: Record not found.
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Program closed.
+
+
+update_cancel: PASS
+Expected fragment: Update cancelled.
+Console output:
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Enter Truck ID to update: Current record:
+ID: 101, Name: Food Corner, Location: Main Market, Menu: Burger, Price: 80, Status: A
+Confirm update (Y/N): Update cancelled.
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Program closed.
+
+
+update_confirm: PASS
+Expected fragment: Record updated successfully.
+Console output:
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Enter Truck ID to update: Current record:
+ID: 101, Name: Food Corner, Location: Main Market, Menu: Burger, Price: 80, Status: A
+Confirm update (Y/N): Enter replacement details (same ID required):
+Enter Truck ID: Enter Truck Name: Enter Location: Enter Menu Item: Enter Price: Enter Status (A/C): Record updated successfully.
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Enter Truck ID to search: ID: 101
+Name: Food Corner New
+Location: Main Market
+Menu: Burger
+Price: 99
+Status: A
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Program closed.
+
+
+delete_cancel: PASS
+Expected fragment: Delete cancelled.
+Console output:
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Enter Truck ID to delete: Record to delete:
+ID: 101, Name: Food Corner, Location: Main Market, Menu: Burger, Price: 80, Status: A
+Confirm DELETE (Y/N): Delete cancelled.
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: ID: 101, Name: Food Corner, Location: Main Market, Menu: Burger, Price: 80, Status: A
+--------------------
+ID: 102, Name: Tasty Wheels, Location: College Road, Menu: Pizza, Price: 120, Status: A
+--------------------
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Program closed.
+
+
+delete_confirm: PASS
+Expected fragment: Record deleted successfully.
+Console output:
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Enter Truck ID to delete: Record to delete:
+ID: 101, Name: Food Corner, Location: Main Market, Menu: Burger, Price: 80, Status: A
+Confirm DELETE (Y/N): Record deleted successfully.
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: ID: 102, Name: Tasty Wheels, Location: College Road, Menu: Pizza, Price: 120, Status: A
+--------------------
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Program closed.
+
+
+invalid_price: PASS
+Expected fragment: Invalid details.
+Console output:
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Enter Truck ID: Enter Truck Name: Enter Location: Enter Menu Item: Enter Price: Enter Status (A/C): Invalid details. Record not saved.
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Program closed.
+
+
+invalid_id: PASS
+Expected fragment: Invalid details.
+Console output:
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Enter Truck ID: Enter Truck Name: Enter Location: Enter Menu Item: Enter Price: Enter Status (A/C): Invalid details. Record not saved.
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Program closed.
+
+
+long_text: PASS
+Expected fragment: Invalid details.
+Console output:
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Enter Truck ID: Enter Truck Name: Enter Location: Enter Menu Item: Enter Price: Enter Status (A/C): Invalid details. Record not saved.
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Program closed.
+
+
+oop_demo: PASS
+Expected fragment: Type conversion FoodTruck to int: 700
+Console output:
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Virtual display through base pointer:
+[Vegetarian truck]
+ID: 700
+Name: Sample Truck
+Location: Campus
+Menu: Sandwich
+Price: 50
+Status: A
+Second derived class:
+[Non-vegetarian truck]
+ID: 700
+Name: Sample Truck
+Location: Campus
+Menu: Sandwich
+Price: 50
+Status: A
+Veg class:
+[Vegetarian truck]
+ID: 700
+Name: Sample Truck
+Location: Campus
+Menu: Sandwich
+Price: 50
+Status: A
+<< operator: ID: 700, Name: Sample Truck, Location: Campus, Menu: Sandwich, Price: 50, Status: A
+== operator (sample/copy): 1
+< operator (sample/sample+10): 1
++ operator (price + 10): ID: 700, Name: Sample Truck, Location: Campus, Menu: Sandwich, Price: 60, Status: A
+Type conversion FoodTruck to int: 700
+>> operator is used when adding/updating records.
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Program closed.
+
+
+restart_persistence: PASS
+Expected fragment: Restart Truck
+Console output:
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Enter Truck ID to search: ID: 601
+Name: Restart Truck
+Location: Station
+Menu: Wrap
+Price: 65
+Status: A
+
+===== FOOD TRUCK PLANNER CA3 =====
+1. Add Food Truck
+2. Display All Food Trucks
+3. Search Food Truck
+4. Update Food Truck
+5. Delete Food Truck
+6. OOP Concept Demo
+7. Exit
+Enter choice: Program closed.
